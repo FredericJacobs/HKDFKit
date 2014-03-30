@@ -1,0 +1,420 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B66238FD18E785C200DA0870 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B66238FC18E785C200DA0870 /* Foundation.framework */; };
+		B662390218E785C200DA0870 /* HKDFKit.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = B662390118E785C200DA0870 /* HKDFKit.h */; };
+		B662390418E785C200DA0870 /* HKDFKit.m in Sources */ = {isa = PBXBuildFile; fileRef = B662390318E785C200DA0870 /* HKDFKit.m */; };
+		B662390B18E785C200DA0870 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B662390A18E785C200DA0870 /* XCTest.framework */; };
+		B662390C18E785C200DA0870 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B66238FC18E785C200DA0870 /* Foundation.framework */; };
+		B662390E18E785C200DA0870 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B662390D18E785C200DA0870 /* UIKit.framework */; };
+		B662391118E785C200DA0870 /* libHKDFKit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B66238F918E785C200DA0870 /* libHKDFKit.a */; };
+		B662391718E785C200DA0870 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B662391518E785C200DA0870 /* InfoPlist.strings */; };
+		B662391918E785C200DA0870 /* HKDFKitTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B662391818E785C200DA0870 /* HKDFKitTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B662390F18E785C200DA0870 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B66238F118E785C200DA0870 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B66238F818E785C200DA0870;
+			remoteInfo = HKDFKit;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		B66238F718E785C200DA0870 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+				B662390218E785C200DA0870 /* HKDFKit.h in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		B66238F918E785C200DA0870 /* libHKDFKit.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libHKDFKit.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		B66238FC18E785C200DA0870 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		B662390018E785C200DA0870 /* HKDFKit-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "HKDFKit-Prefix.pch"; sourceTree = "<group>"; };
+		B662390118E785C200DA0870 /* HKDFKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HKDFKit.h; sourceTree = "<group>"; };
+		B662390318E785C200DA0870 /* HKDFKit.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HKDFKit.m; sourceTree = "<group>"; };
+		B662390918E785C200DA0870 /* HKDFKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HKDFKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B662390A18E785C200DA0870 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		B662390D18E785C200DA0870 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		B662391418E785C200DA0870 /* HKDFKitTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "HKDFKitTests-Info.plist"; sourceTree = "<group>"; };
+		B662391618E785C200DA0870 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		B662391818E785C200DA0870 /* HKDFKitTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HKDFKitTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B66238F618E785C200DA0870 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B66238FD18E785C200DA0870 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B662390618E785C200DA0870 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B662390B18E785C200DA0870 /* XCTest.framework in Frameworks */,
+				B662390E18E785C200DA0870 /* UIKit.framework in Frameworks */,
+				B662390C18E785C200DA0870 /* Foundation.framework in Frameworks */,
+				B662391118E785C200DA0870 /* libHKDFKit.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B66238F018E785C200DA0870 = {
+			isa = PBXGroup;
+			children = (
+				B66238FE18E785C200DA0870 /* HKDFKit */,
+				B662391218E785C200DA0870 /* HKDFKitTests */,
+				B66238FB18E785C200DA0870 /* Frameworks */,
+				B66238FA18E785C200DA0870 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B66238FA18E785C200DA0870 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B66238F918E785C200DA0870 /* libHKDFKit.a */,
+				B662390918E785C200DA0870 /* HKDFKitTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B66238FB18E785C200DA0870 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B66238FC18E785C200DA0870 /* Foundation.framework */,
+				B662390A18E785C200DA0870 /* XCTest.framework */,
+				B662390D18E785C200DA0870 /* UIKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B66238FE18E785C200DA0870 /* HKDFKit */ = {
+			isa = PBXGroup;
+			children = (
+				B662390118E785C200DA0870 /* HKDFKit.h */,
+				B662390318E785C200DA0870 /* HKDFKit.m */,
+				B66238FF18E785C200DA0870 /* Supporting Files */,
+			);
+			path = HKDFKit;
+			sourceTree = "<group>";
+		};
+		B66238FF18E785C200DA0870 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B662390018E785C200DA0870 /* HKDFKit-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B662391218E785C200DA0870 /* HKDFKitTests */ = {
+			isa = PBXGroup;
+			children = (
+				B662391818E785C200DA0870 /* HKDFKitTests.m */,
+				B662391318E785C200DA0870 /* Supporting Files */,
+			);
+			path = HKDFKitTests;
+			sourceTree = "<group>";
+		};
+		B662391318E785C200DA0870 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B662391418E785C200DA0870 /* HKDFKitTests-Info.plist */,
+				B662391518E785C200DA0870 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B66238F818E785C200DA0870 /* HKDFKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B662391C18E785C200DA0870 /* Build configuration list for PBXNativeTarget "HKDFKit" */;
+			buildPhases = (
+				B66238F518E785C200DA0870 /* Sources */,
+				B66238F618E785C200DA0870 /* Frameworks */,
+				B66238F718E785C200DA0870 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HKDFKit;
+			productName = HKDFKit;
+			productReference = B66238F918E785C200DA0870 /* libHKDFKit.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		B662390818E785C200DA0870 /* HKDFKitTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B662391F18E785C200DA0870 /* Build configuration list for PBXNativeTarget "HKDFKitTests" */;
+			buildPhases = (
+				B662390518E785C200DA0870 /* Sources */,
+				B662390618E785C200DA0870 /* Frameworks */,
+				B662390718E785C200DA0870 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B662391018E785C200DA0870 /* PBXTargetDependency */,
+			);
+			name = HKDFKitTests;
+			productName = HKDFKitTests;
+			productReference = B662390918E785C200DA0870 /* HKDFKitTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B66238F118E785C200DA0870 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "Frederic Jacobs";
+			};
+			buildConfigurationList = B66238F418E785C200DA0870 /* Build configuration list for PBXProject "HKDFKit" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = B66238F018E785C200DA0870;
+			productRefGroup = B66238FA18E785C200DA0870 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B66238F818E785C200DA0870 /* HKDFKit */,
+				B662390818E785C200DA0870 /* HKDFKitTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B662390718E785C200DA0870 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B662391718E785C200DA0870 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B66238F518E785C200DA0870 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B662390418E785C200DA0870 /* HKDFKit.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B662390518E785C200DA0870 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B662391918E785C200DA0870 /* HKDFKitTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B662391018E785C200DA0870 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B66238F818E785C200DA0870 /* HKDFKit */;
+			targetProxy = B662390F18E785C200DA0870 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		B662391518E785C200DA0870 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B662391618E785C200DA0870 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B662391A18E785C200DA0870 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		B662391B18E785C200DA0870 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B662391D18E785C200DA0870 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/HKDFKit.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "HKDFKit/HKDFKit-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		B662391E18E785C200DA0870 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/HKDFKit.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "HKDFKit/HKDFKit-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		B662392018E785C200DA0870 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "HKDFKit/HKDFKit-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "HKDFKitTests/HKDFKitTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		B662392118E785C200DA0870 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "HKDFKit/HKDFKit-Prefix.pch";
+				INFOPLIST_FILE = "HKDFKitTests/HKDFKitTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B66238F418E785C200DA0870 /* Build configuration list for PBXProject "HKDFKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B662391A18E785C200DA0870 /* Debug */,
+				B662391B18E785C200DA0870 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B662391C18E785C200DA0870 /* Build configuration list for PBXNativeTarget "HKDFKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B662391D18E785C200DA0870 /* Debug */,
+				B662391E18E785C200DA0870 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		B662391F18E785C200DA0870 /* Build configuration list for PBXNativeTarget "HKDFKitTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B662392018E785C200DA0870 /* Debug */,
+				B662392118E785C200DA0870 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B66238F118E785C200DA0870 /* Project object */;
+}
