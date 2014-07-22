@@ -11,13 +11,20 @@
 @implementation HKDFKit
 
 + (NSData *)deriveKey:(NSData *)seed info:(NSData *)info salt:(NSData *)salt outputSize:(int)outputSize{
-    NSData *prk = [self extract:seed salt:salt];
-    NSData *okm = [self expand:prk info:info outputSize:outputSize];
-    
-    return okm;
+    return [self deriveKey:seed info:info salt:salt outputSize:outputSize offset:1];
+}
+
++ (NSData*)TextSecureV2deriveKey:(NSData*)seed info:(NSData*)info salt:(NSData*)salt outputSize:(int)outputSize{
+    return [self deriveKey:seed info:info salt:salt outputSize:outputSize offset:0];
 }
 
 #pragma mark Private Methods
+
++ (NSData *)deriveKey:(NSData *)seed info:(NSData *)info salt:(NSData *)salt outputSize:(int)outputSize offset:(int)offset{
+    NSData *prk = [self extract:seed salt:salt];
+    NSData *okm = [self expand:prk info:info outputSize:outputSize offset:offset];
+    return okm;
+}
 
 + (NSData*)extract:(NSData*)data salt:(NSData*)salt{
     char prk[HKDF_HASH_LEN] = {0};
@@ -25,12 +32,12 @@
     return [NSData dataWithBytes:prk length:sizeof(prk)];
 }
 
-+ (NSData*)expand:(NSData*)data info:(NSData*)info outputSize:(int)outputSize{
++ (NSData*)expand:(NSData*)data info:(NSData*)info outputSize:(int)outputSize offset:(int)offset{
     int             iterations = (int)ceil((double)outputSize/(double)HKDF_HASH_LEN);
     NSData          *mixin = [NSData data];
     NSMutableData   *results = [NSMutableData data];
 
-    for (int i=0; i<iterations; i++) {
+    for (int i=offset; i<(iterations+offset); i++) {
         CCHmacContext ctx;
         CCHmacInit(&ctx, HKDF_HASH_ALG, [data bytes], [data length]);
         CCHmacUpdate(&ctx, [mixin bytes], [mixin length]);
@@ -46,7 +53,7 @@
         mixin = [stepResult copy];
     }
     
-    return [NSData dataWithData:results];
+    return [[NSData dataWithData:results] subdataWithRange:NSMakeRange(0, outputSize)];
 }
 
 @end
