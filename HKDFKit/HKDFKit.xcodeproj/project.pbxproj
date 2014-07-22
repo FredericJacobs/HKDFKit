@@ -42,9 +42,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		B62EA91A197E3AA1008FC980 /* HKDFKit-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "HKDFKit-Prefix.pch"; sourceTree = "<group>"; };
 		B66238F918E785C200DA0870 /* libHKDFKit.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libHKDFKit.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		B66238FC18E785C200DA0870 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		B662390018E785C200DA0870 /* HKDFKit-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "HKDFKit-Prefix.pch"; sourceTree = "<group>"; };
 		B662390118E785C200DA0870 /* HKDFKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HKDFKit.h; sourceTree = "<group>"; };
 		B662390318E785C200DA0870 /* HKDFKit.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HKDFKit.m; sourceTree = "<group>"; };
 		B662390918E785C200DA0870 /* HKDFKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HKDFKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -81,6 +81,7 @@
 		B66238F018E785C200DA0870 = {
 			isa = PBXGroup;
 			children = (
+				B62EA91A197E3AA1008FC980 /* HKDFKit-Prefix.pch */,
 				B66238FE18E785C200DA0870 /* HKDFKit */,
 				B662391218E785C200DA0870 /* HKDFKitTests */,
 				B66238FB18E785C200DA0870 /* Frameworks */,
@@ -112,17 +113,8 @@
 			children = (
 				B662390118E785C200DA0870 /* HKDFKit.h */,
 				B662390318E785C200DA0870 /* HKDFKit.m */,
-				B66238FF18E785C200DA0870 /* Supporting Files */,
 			);
 			path = HKDFKit;
-			sourceTree = "<group>";
-		};
-		B66238FF18E785C200DA0870 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				B662390018E785C200DA0870 /* HKDFKit-Prefix.pch */,
-			);
-			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 		B662391218E785C200DA0870 /* HKDFKitTests */ = {
@@ -331,7 +323,7 @@
 			buildSettings = {
 				DSTROOT = /tmp/HKDFKit.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "HKDFKit/HKDFKit-Prefix.pch";
+				GCC_PREFIX_HEADER = "HKDFKit-Prefix.pch";
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -343,7 +335,7 @@
 			buildSettings = {
 				DSTROOT = /tmp/HKDFKit.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "HKDFKit/HKDFKit-Prefix.pch";
+				GCC_PREFIX_HEADER = "HKDFKit-Prefix.pch";
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -359,7 +351,7 @@
 					"$(DEVELOPER_FRAMEWORKS_DIR)",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "HKDFKit/HKDFKit-Prefix.pch";
+				GCC_PREFIX_HEADER = "HKDFKit-Prefix.pch";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
@@ -379,7 +371,7 @@
 					"$(DEVELOPER_FRAMEWORKS_DIR)",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "HKDFKit/HKDFKit-Prefix.pch";
+				GCC_PREFIX_HEADER = "HKDFKit-Prefix.pch";
 				INFOPLIST_FILE = "HKDFKitTests/HKDFKitTests-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = xctest;
@@ -405,6 +397,7 @@
 				B662391E18E785C200DA0870 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B662391F18E785C200DA0870 /* Build configuration list for PBXNativeTarget "HKDFKitTests" */ = {
 			isa = XCConfigurationList;
@@ -413,6 +406,7 @@
 				B662392118E785C200DA0870 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
