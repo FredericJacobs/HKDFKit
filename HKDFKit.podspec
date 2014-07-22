@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "HKDFKit"
-  s.version      = "0.0.2"
+  s.version      = "0.0.3"
   s.summary      = "HKDFKit provides Objective-C implementations of HKDF."
 
   s.description  = <<-DESC
@@ -12,7 +12,7 @@ Pod::Spec.new do |s|
   s.author             = { "Frederic Jacobs" => "github@fredericjacobs.com" }
   s.social_media_url = "https://twitter.com/FredericJacobs"
 
-  s.source       = { :git => "https://github.com/FredericJacobs/HKDFKit.git", :tag => "0.0.2" }
+  s.source       = { :git => "https://github.com/FredericJacobs/HKDFKit.git", :tag => "0.0.3" }
 
   s.source_files  = 'HKDFKit/HKDFKit/*{h,m}'
 
