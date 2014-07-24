@@ -15,7 +15,7 @@
 @interface HKDFKit : NSObject
 
 /**
- *  Default HKDF implementation. http://tools.ietf.org/html/rfc5869
+ *  Standard HKDF implementation. http://tools.ietf.org/html/rfc5869
  *
  *  @param seed       Original keying material
  *  @param info       Expansion "salt"
@@ -27,7 +27,16 @@
 
 + (NSData*)deriveKey:(NSData*)seed info:(NSData*)info salt:(NSData*)salt outputSize:(int)outputSize;
 
-// TextSecure Protocol v2 uses a variation of HKDF, v3 uses standard HKDF.
+/**
+ *  TextSecure v2 HKDF implementation
+ *
+ *  @param seed       Original keying material
+ *  @param info       Expansion "salt"
+ *  @param salt       Extraction salt
+ *  @param outputSize Size of the output
+ *
+ *  @return The derived key material
+ */
 
 + (NSData*)TextSecureV2deriveKey:(NSData*)seed info:(NSData*)info salt:(NSData*)salt outputSize:(int)outputSize;
 
