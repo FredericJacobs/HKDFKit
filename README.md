@@ -12,7 +12,7 @@ NSData *derivedData = [HKDFKit deriveKey:aSeed info:anInfo salt:aSalt outputSize
 ```
 ---
 
-[TextSecure v2 protcol]() uses different bounds for the HKDF function.
+[TextSecure v2 protocol](https://github.com/WhisperSystems/TextSecure/wiki/ProtocolV2) uses different bounds for the HKDF function.
 
 ```objective-c
 NSData *derivedData = [TextSecureV2deriveKey:aSeed info:anInfo salt:aSalt outputSize:anOutputSize];
