@@ -7,6 +7,10 @@
 //
 
 #import "HKDFKit.h"
+#import <CommonCrypto/CommonCrypto.h>
+
+#define HKDF_HASH_ALG kCCHmacAlgSHA256
+#define HKDF_HASH_LEN CC_SHA256_DIGEST_LENGTH
 
 @implementation HKDFKit
 
