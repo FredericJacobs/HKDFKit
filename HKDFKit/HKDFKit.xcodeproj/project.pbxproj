@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9F4C50F41DDF190A008DFCC2 /* HKDFKit-iOS.h in Headers */ = {isa = PBXBuildFile; fileRef = 9F4C50F21DDF190A008DFCC2 /* HKDFKit-iOS.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9F4C50F81DDF1913008DFCC2 /* HKDFKit.m in Sources */ = {isa = PBXBuildFile; fileRef = B662390318E785C200DA0870 /* HKDFKit.m */; };
+		9F4C50F91DDF1918008DFCC2 /* HKDFKit.m in Headers */ = {isa = PBXBuildFile; fileRef = B662390318E785C200DA0870 /* HKDFKit.m */; settings = {ATTRIBUTES = (Public, ); }; };
 		B66238FD18E785C200DA0870 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B66238FC18E785C200DA0870 /* Foundation.framework */; };
 		B662390218E785C200DA0870 /* HKDFKit.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = B662390118E785C200DA0870 /* HKDFKit.h */; };
 		B662390418E785C200DA0870 /* HKDFKit.m in Sources */ = {isa = PBXBuildFile; fileRef = B662390318E785C200DA0870 /* HKDFKit.m */; };
@@ -42,6 +45,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		9F4C50F01DDF190A008DFCC2 /* HKDFKitiOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = HKDFKitiOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9F4C50F21DDF190A008DFCC2 /* HKDFKit-iOS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "HKDFKit-iOS.h"; sourceTree = "<group>"; };
+		9F4C50F31DDF190A008DFCC2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B62EA91A197E3AA1008FC980 /* HKDFKit-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "HKDFKit-Prefix.pch"; sourceTree = "<group>"; };
 		B66238F918E785C200DA0870 /* libHKDFKit.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libHKDFKit.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		B66238FC18E785C200DA0870 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -56,6 +62,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		9F4C50EC1DDF190A008DFCC2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		B66238F618E785C200DA0870 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -78,12 +91,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9F4C50F11DDF190A008DFCC2 /* HKDFKit-iOS */ = {
+			isa = PBXGroup;
+			children = (
+				9F4C50F21DDF190A008DFCC2 /* HKDFKit-iOS.h */,
+				9F4C50F31DDF190A008DFCC2 /* Info.plist */,
+			);
+			path = "HKDFKit-iOS";
+			sourceTree = "<group>";
+		};
 		B66238F018E785C200DA0870 = {
 			isa = PBXGroup;
 			children = (
 				B62EA91A197E3AA1008FC980 /* HKDFKit-Prefix.pch */,
 				B66238FE18E785C200DA0870 /* HKDFKit */,
 				B662391218E785C200DA0870 /* HKDFKitTests */,
+				9F4C50F11DDF190A008DFCC2 /* HKDFKit-iOS */,
 				B66238FB18E785C200DA0870 /* Frameworks */,
 				B66238FA18E785C200DA0870 /* Products */,
 			);
@@ -94,6 +117,7 @@
 			children = (
 				B66238F918E785C200DA0870 /* libHKDFKit.a */,
 				B662390918E785C200DA0870 /* HKDFKitTests.xctest */,
+				9F4C50F01DDF190A008DFCC2 /* HKDFKitiOS.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -137,7 +161,37 @@
 		};
 /* End PBXGroup section */
 
+/* Begin PBXHeadersBuildPhase section */
+		9F4C50ED1DDF190A008DFCC2 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9F4C50F41DDF190A008DFCC2 /* HKDFKit-iOS.h in Headers */,
+				9F4C50F91DDF1918008DFCC2 /* HKDFKit.m in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
 /* Begin PBXNativeTarget section */
+		9F4C50EF1DDF190A008DFCC2 /* HKDFKitiOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9F4C50F71DDF190A008DFCC2 /* Build configuration list for PBXNativeTarget "HKDFKitiOS" */;
+			buildPhases = (
+				9F4C50EB1DDF190A008DFCC2 /* Sources */,
+				9F4C50EC1DDF190A008DFCC2 /* Frameworks */,
+				9F4C50ED1DDF190A008DFCC2 /* Headers */,
+				9F4C50EE1DDF190A008DFCC2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HKDFKitiOS;
+			productName = "HKDFKit-iOS";
+			productReference = 9F4C50F01DDF190A008DFCC2 /* HKDFKitiOS.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 		B66238F818E785C200DA0870 /* HKDFKit */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = B662391C18E785C200DA0870 /* Build configuration list for PBXNativeTarget "HKDFKit" */;
@@ -181,6 +235,13 @@
 			attributes = {
 				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = "Frederic Jacobs";
+				TargetAttributes = {
+					9F4C50EF1DDF190A008DFCC2 = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = FNAER8KD25;
+						ProvisioningStyle = Automatic;
+					};
+				};
 			};
 			buildConfigurationList = B66238F418E785C200DA0870 /* Build configuration list for PBXProject "HKDFKit" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -196,11 +257,19 @@
 			targets = (
 				B66238F818E785C200DA0870 /* HKDFKit */,
 				B662390818E785C200DA0870 /* HKDFKitTests */,
+				9F4C50EF1DDF190A008DFCC2 /* HKDFKitiOS */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		9F4C50EE1DDF190A008DFCC2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		B662390718E785C200DA0870 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -212,6 +281,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		9F4C50EB1DDF190A008DFCC2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9F4C50F81DDF1913008DFCC2 /* HKDFKit.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		B66238F518E785C200DA0870 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -250,6 +327,74 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		9F4C50F51DDF190A008DFCC2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = FNAER8KD25;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "HKDFKit-iOS/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = me.elland.HKDFKit;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		9F4C50F61DDF190A008DFCC2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = FNAER8KD25;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "HKDFKit-iOS/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = me.elland.HKDFKit;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 		B662391A18E785C200DA0870 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -381,6 +526,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		9F4C50F71DDF190A008DFCC2 /* Build configuration list for PBXNativeTarget "HKDFKitiOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9F4C50F51DDF190A008DFCC2 /* Debug */,
+				9F4C50F61DDF190A008DFCC2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		B66238F418E785C200DA0870 /* Build configuration list for PBXProject "HKDFKit" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
