@@ -16,4 +16,4 @@ FOUNDATION_EXPORT const unsigned char HKDFKit_iOSVersionString[];
 
 // In this header, you should import all the public headers of your framework using statements like #import <HKDFKit_iOS/PublicHeader.h>
 
-#import <HKDFKit_iOS/HKDFKit.h>
+#import <HKDFKitiOS/HKDFKit.h>

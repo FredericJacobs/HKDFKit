@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		9F4C50F41DDF190A008DFCC2 /* HKDFKit-iOS.h in Headers */ = {isa = PBXBuildFile; fileRef = 9F4C50F21DDF190A008DFCC2 /* HKDFKit-iOS.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9F4C50F81DDF1913008DFCC2 /* HKDFKit.m in Sources */ = {isa = PBXBuildFile; fileRef = B662390318E785C200DA0870 /* HKDFKit.m */; };
-		9F4C50F91DDF1918008DFCC2 /* HKDFKit.m in Headers */ = {isa = PBXBuildFile; fileRef = B662390318E785C200DA0870 /* HKDFKit.m */; settings = {ATTRIBUTES = (Public, ); }; };
+		9FEE66271DDF3B14009CB7B5 /* HKDFKit.h in Headers */ = {isa = PBXBuildFile; fileRef = B662390118E785C200DA0870 /* HKDFKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B66238FD18E785C200DA0870 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B66238FC18E785C200DA0870 /* Foundation.framework */; };
 		B662390218E785C200DA0870 /* HKDFKit.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = B662390118E785C200DA0870 /* HKDFKit.h */; };
 		B662390418E785C200DA0870 /* HKDFKit.m in Sources */ = {isa = PBXBuildFile; fileRef = B662390318E785C200DA0870 /* HKDFKit.m */; };
@@ -167,7 +167,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9F4C50F41DDF190A008DFCC2 /* HKDFKit-iOS.h in Headers */,
-				9F4C50F91DDF1918008DFCC2 /* HKDFKit.m in Headers */,
+				9FEE66271DDF3B14009CB7B5 /* HKDFKit.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
